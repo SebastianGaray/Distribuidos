@@ -3,7 +3,9 @@ Laboratorio de distribuidos, con implementación de Kafka y Apache Ignite
 
 # Instalación
 ## Python
-pip install kafka-python
+pip3 install kafka-python
+pip3 install python-twitter
+pip3 install tweepy
 
 ## Kafka
 Bajar kafka desde:
