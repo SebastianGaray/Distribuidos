@@ -4,11 +4,15 @@ Laboratorio de sistemas distribuidos del segundo semestre del año 2019, en dond
 El sistema tiene dos modos, uno para realizar pruebas en donde los mensajes no se guardan en las bases de datos, y se muestran en tiempo real al cliente, como se muestra en la siguiente figura:
 
 ![](Recursos/Sistema1.png)
+
 *Figura 1: Sistema de prueba*
+
 Y el segundo modo en donde los mensajes si se guardan en las bases de datos, sin necesidad que el cliente tenga que visualizarlos, como se muestra a continuación:
 
 ![](Recursos/Sistema2.png)
+
 *Figura 2: Sistema final*
+
 # Instalación y ejecución del proyecto
 ## Python
 Se utiliza Python 3, en donde para instalar los módulos utilizados se necesita ejecutar los siguientes comandos:
