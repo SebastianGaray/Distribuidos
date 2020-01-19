@@ -43,7 +43,7 @@ A continuación, se muestran los mensajes por segundo obtenidos, donde la consol
 
 De acuerdo a esto, al monitorizar el servidor, se presentan los siguientes datos:
 
-![](Recursos/pruebas1.gif)
+![](Recursos/pruebas1.png)
 
 ### Usando tweets
 
@@ -52,17 +52,21 @@ Para los tweets en tiempo real se obtiene lo siguiente:
 
 ![](Recursos/MessagesTweets.gif)
 
+Obteniendo una media de 53 tweets por segundo consumidos aproximadamente.
+
 Donde en el servidor se presentan los siguientes datos:
 
-![](Recursos/pruebas2.gif)
+![](Recursos/pruebas2.png)
 
 Además, se realiza una prueba enviar 160.000 tweets primero, y luego consumirlos, dando los siguientes resultados:
 
 ![](Recursos/MessagesTweets2.gif)
 
+Obteniendo una media de 179 tweets por segundos consumidos aproximadamente.
+
 Mientras que en el servidor se obtienen los datos de a continuación:
 
-![](Recursos/pruebas3.gif)
+![](Recursos/pruebas3.png)
 
 ## Cliente-Servidor.
 ### Usando mensajes simples
