@@ -1,5 +1,5 @@
-import Producer
-import Consumer
+import ProducerTest
+import ConsumerTest
 import threading
 
 def startProducer():

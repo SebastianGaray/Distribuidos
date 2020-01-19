@@ -4,7 +4,7 @@ import json
 from time import time
 def start():
     consumer = KafkaConsumer(
-        'test',
+        'numtest',
         bootstrap_servers=['167.172.150.191:9092'],
         auto_offset_reset='earliest',
         group_id='group',
@@ -15,7 +15,7 @@ def start():
     startTime = time()
     for message in consumer:
         message = message.value
-        print("Consumidor: Recibiendo mensaje N: ",message)
+        #print("Consumidor: Recibiendo mensaje N: ",message)
         #print(message)
         print("Mensajes por segundo: ", e/(time()-startTime))
         e = e+1
