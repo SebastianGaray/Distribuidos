@@ -43,7 +43,7 @@ A continuación, se muestran los mensajes por segundo obtenidos, donde la consol
 
 De acuerdo a esto, al monitorizar el servidor, se presentan los siguientes datos:
 
-![](Recursos/Pruebas1.gif)
+![](Recursos/pruebas1.gif)
 
 ### Usando tweets
 
@@ -54,7 +54,7 @@ Para los tweets en tiempo real se obtiene lo siguiente:
 
 Donde en el servidor se presentan los siguientes datos:
 
-![](Recursos/Pruebas2.gif)
+![](Recursos/pruebas2.gif)
 
 Además, se realiza una prueba enviar 160.000 tweets primero, y luego consumirlos, dando los siguientes resultados:
 
@@ -62,7 +62,7 @@ Además, se realiza una prueba enviar 160.000 tweets primero, y luego consumirlo
 
 Mientras que en el servidor se obtienen los datos de a continuación:
 
-![](Recursos/Pruebas3.gif)
+![](Recursos/pruebas3.gif)
 
 ## Cliente-Servidor.
 ### Usando mensajes simples
