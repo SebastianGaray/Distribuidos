@@ -24,3 +24,15 @@ Abrir terminal y ejecutar ./Topic.sh
 
 ## Ejecutar
 En una terminal ejecutar python3 Main.py
+
+# Pruebas
+
+## Usando mensajes simples
+
+Se realizan pruebas de estrés enviando al servidor mensajes simples. En este caso, se utilizan los códigos de MainTest.py, ProducerTest.py y ConsumerTest.py, en donde se envía hacia el servidor un contador que aumenta en 1 por cada envío, y luego se consume.
+
+A continuación, se muestran los mensajes por segundo obtenidos, donde la consola de la izquierda es el productor y la consola de la derecha el consumidor:
+
+![](MessagesTest.gif)
+
+## Usando tweets
