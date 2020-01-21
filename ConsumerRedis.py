@@ -11,7 +11,8 @@ r = redis.Redis(host='127.0.0.1', port=6379, db=0) #Local
 def start():
     consumer = KafkaConsumer(
         'test',
-        bootstrap_servers=['167.172.150.191:9092'],
+        #bootstrap_servers=['167.172.150.191:9092'],
+        bootstrap_servers=['127.0.0.1:9092'],
         auto_offset_reset='earliest',
         group_id='group',
         enable_auto_commit=True,
