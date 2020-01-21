@@ -3,10 +3,10 @@ import Consumer
 import threading
 
 def startProducer():
-    ProducerTest.start()
+    Producer.start()
 
 def startConsumer():
-    ConsumerTest.start()
+    Consumer.start()
 
 option = int(input("Ingrese opcion (1: Producir, 2: Consumir): "))
 if(option == 1):
