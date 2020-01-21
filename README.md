@@ -20,6 +20,9 @@ Se utiliza Python 3, en donde para instalar los módulos utilizados se necesita 
 pip3 install kafka-python
 pip3 install python-twitter
 pip3 install tweepy
+pip3 install psycopg2-binary
+pip3 install pyignite
+pip3 install redis
 ```
 
 ## Ejecutar
