@@ -126,13 +126,15 @@ Con el servidor se visualiza lo siguiente:
 ### Comparación
 
 Estas pruebas se realizaron al enviar 50.000 mensajes simples, dando los siguientes tiempos en guardar todos los mensajes para cada base de datos:
-| Base de Datos | Tiempo Total |
+
+| Base de Datos | Tiempo Total  |
 | ------------- | ------------- |
-| Postgresql  | 4:17  |
-| Apache Ignite  | 3:29  |
-| Redis  | 2:10  |
+| Postgresql    | 4:17          |
+| Apache Ignite | 3:29          |
+| Redis         | 2:10          |
 
 Y de acuerdo a esto, calculando la cantidad de mensajes por segundo guardados se obtendría lo siguiente:
+
 | Base de Datos | Mensajes por Segundo |
 | ------------- | ------------- |
 | Postgresql  | 194  |
@@ -170,7 +172,7 @@ Finalmente, en cuanto a Redis se da lo siguiente:
 En este caso, el servidor queda de la siguiente manera:
 ![](Recursos/ServidorRedisTweets.png)
 
-#Conclución
+## Conclución
 
 Al realizar las distintas pruebas, se observa un gran aumento del rendimiento al utilizar las bases de datos de Ignite y Redis respecto a Postgres, lo cuál nos indica el buen rendimiento de las bases de datos en memoria. Aunque cabe destacar que es necesario tener una máquina potente en cuanto a RAM, debido a que estas bases de datos consumen bastante.
 
