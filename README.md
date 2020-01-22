@@ -72,6 +72,58 @@ Mientras que en el servidor se obtienen los datos de a continuación:
 ![](Recursos/pruebas3.png)
 
 ## Cliente-Servidor.
+
+Para tener una idea de como se comportan los mensajes al llegar al servidor, se genera la visualización de los mensajes sin guardarlos en ninguna base de datos, dando lo siguiente:
+
+
+
+Además, en cuanto a los recursos del servidor, se tienen los siguientes datos:
+
+![](Recursos/ServidorReposoConBaseDatos.png)
+
+Donde se aprecia que el consumo de memoria ram aumenta bastante, lo que se conlleva con Apache Ignite y Redis, las cuales son bases de datos en memoria.
+
 ### Usando mensajes simples
 
+#### PostgreSQL
+
+![](Recursos/SimpleMessagesToPS.gif)
+
+![](Recursos/SavedSimpleMessagesPS.jpg)
+
+![](Recursos/ServidorPSSimple.png)
+
+
+#### Apache Ignite
+
+![](Recursos/SimpleMessagesToIgnite.jpg)
+
+![](Recursos/ServidorIgniteSimple.png)
+
+#### Redis
+
+![](Recursos/SimpleMessagesToRedis.jpg)
+
+![](Recursos/ServidorRedisSimple.png)
+
 ### Usando tweets
+
+#### PostgreSQL
+
+![](Recursos/TweetsMessagesToPS.gif)
+
+![](Recursos/SavedTweetsMessagesPS.jpg)
+
+![](Recursos/ServidorPSTweets.png)
+
+#### Apache Ignite
+
+![](Recursos/TweetsMessagesToIgnite.jpg)
+
+![](Recursos/ServidorIgniteTweets.png)
+
+#### Redis
+
+![](Recursos/TweetsMessagesToRedis.jpg)
+
+![](Recursos/ServidorRedisTweets.png)
