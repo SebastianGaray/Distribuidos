@@ -75,7 +75,7 @@ Mientras que en el servidor se obtienen los datos de a continuación:
 
 Para tener una idea de como se comportan los mensajes al llegar al servidor, se genera la visualización de los mensajes sin guardarlos en ninguna base de datos, dando lo siguiente:
 
-
+![](Recursos/MessagesWithoutSaving.gif)
 
 Además, en cuanto a los recursos del servidor, se tienen los siguientes datos:
 
@@ -89,20 +89,19 @@ Donde se aprecia que el consumo de memoria ram aumenta bastante, lo que se conll
 
 ![](Recursos/SimpleMessagesToPS.gif)
 
-![](Recursos/SavedSimpleMessagesPS.jpg)
-
 ![](Recursos/ServidorPSSimple.png)
 
+![](Recursos/SavedSimpleMessagesPS.jpg)
 
 #### Apache Ignite
 
-![](Recursos/SimpleMessagesToIgnite.jpg)
+![](Recursos/SimpleMessagesToIgnite.gif)
 
 ![](Recursos/ServidorIgniteSimple.png)
 
 #### Redis
 
-![](Recursos/SimpleMessagesToRedis.jpg)
+![](Recursos/SimpleMessagesToRedis.gif)
 
 ![](Recursos/ServidorRedisSimple.png)
 
@@ -112,18 +111,18 @@ Donde se aprecia que el consumo de memoria ram aumenta bastante, lo que se conll
 
 ![](Recursos/TweetsMessagesToPS.gif)
 
-![](Recursos/SavedTweetsMessagesPS.jpg)
-
 ![](Recursos/ServidorPSTweets.png)
+
+![](Recursos/SavedTweetsMessagesPS.jpg)
 
 #### Apache Ignite
 
-![](Recursos/TweetsMessagesToIgnite.jpg)
+![](Recursos/TweetsMessagesToIgnite.gif)
 
 ![](Recursos/ServidorIgniteTweets.png)
 
 #### Redis
 
-![](Recursos/TweetsMessagesToRedis.jpg)
+![](Recursos/TweetsMessagesToRedis.gif)
 
 ![](Recursos/ServidorRedisTweets.png)
