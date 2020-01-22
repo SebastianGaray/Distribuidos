@@ -87,47 +87,93 @@ Donde se aprecia que el consumo de memoria ram aumenta bastante, lo que se conll
 
 #### PostgreSQL
 
+Al igual que antes, primero se realiza una prueba al guardar datos simples en postgres, dando los siguientes datos:
+
 ![](Recursos/SimpleMessagesToPS.gif)
+
+En cuanto al servidor, se genera el siguiente estado:
 
 ![](Recursos/ServidorPSSimple.png)
 
+Donde se visualiza un aumento de escritura en disco.
+
+En cuanto a los mensajes guardados, se obtiene lo siguiente:
+
 ![](Recursos/SavedSimpleMessagesPS.jpg)
+
+
 
 #### Apache Ignite
 
+En cuanto a Apache Ignite, al guardar los mensajes simples se visualiza lo siguiente:
 ![](Recursos/SimpleMessagesToIgnite.gif)
+
+Mientras que en el servidor se presenta lo siguiente:
 
 ![](Recursos/ServidorIgniteSimple.png)
 
 #### Redis
 
+Mientras que con Redis, se tienen los siguientes datos:
+
 ![](Recursos/SimpleMessagesToRedis.gif)
 
+Con el servidor se visualiza lo siguiente:
+
 ![](Recursos/ServidorRedisSimple.png)
+
+
+### Comparación
+
+Estas pruebas se realizaron al enviar 50.000 mensajes simples, dando los siguientes tiempos en guardar todos los mensajes para cada base de datos:
+| Base de Datos | Tiempo Total |
+| ------------- | ------------- |
+| Postgresql  | 4:17  |
+| Apache Ignite  | 3:29  |
+| Redis  | 2:10  |
+
+Y de acuerdo a esto, calculando la cantidad de mensajes por segundo guardados se obtendría lo siguiente:
+| Base de Datos | Mensajes por Segundo |
+| ------------- | ------------- |
+| Postgresql  | 194  |
+| Apache Ignite  | 239  |
+| Redis  | 384  |
+
+
 
 ### Usando tweets
 
 #### PostgreSQL
 
+En cuanto al utilizar un flulo de tweets, se dan los siguientes datos:
 ![](Recursos/TweetsMessagesToPS.gif)
 
+En el servidor se presenta lo siguiente:
 ![](Recursos/ServidorPSTweets.png)
 
+En cuanto a los mensajes guardados, se visualizan de la siguiente manera:
 ![](Recursos/SavedTweetsPS.png)
 
 #### Apache Ignite
 
+Para Apache Ignite, se presenta lo siguiente:
 ![](Recursos/TweetsMessagesToIgnite.gif)
 
+Mientras que en el servidor se obtienen los siguientes datos:
 ![](Recursos/ServidorIgniteTweets.png)
 
 #### Redis
 
+Finalmente, en cuanto a Redis se da lo siguiente:
 ![](Recursos/TweetsMessagesToRedis.gif)
 
+En este caso, el servidor queda de la siguiente manera:
 ![](Recursos/ServidorRedisTweets.png)
 
-Tiempos: 
-PS: 4:17
-Ignite: 3:29
-Redis: 2:10
+#Conclución
+
+Al realizar las distintas pruebas, se observa un gran aumento del rendimiento al utilizar las bases de datos de Ignite y Redis respecto a Postgres, lo cuál nos indica el buen rendimiento de las bases de datos en memoria. Aunque cabe destacar que es necesario tener una máquina potente en cuanto a RAM, debido a que estas bases de datos consumen bastante.
+
+Nos sorprendió el rendimiento de Redis por sobre las otras, debido a que no solo fué la más rápida, si no que además fue la que menos recursos utilizó.
+
+En cuanto a Kafka, es primera vez que nos topamos con un sistema como este, por lo que nos sorprendió lo que es capaz de lograr. El hecho de poder procesar cada mensaje de acuerdo a como van llegando, y poder irlos guardando en una cola es una herramienta muy útil para un mundo basado en comunicaciones como es el nuestro.
