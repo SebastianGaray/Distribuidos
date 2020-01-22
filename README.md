@@ -113,7 +113,7 @@ Donde se aprecia que el consumo de memoria ram aumenta bastante, lo que se conll
 
 ![](Recursos/ServidorPSTweets.png)
 
-![](Recursos/SavedTweetsMessagesPS.jpg)
+![](Recursos/SavedTweetsPS.png)
 
 #### Apache Ignite
 
@@ -126,3 +126,8 @@ Donde se aprecia que el consumo de memoria ram aumenta bastante, lo que se conll
 ![](Recursos/TweetsMessagesToRedis.gif)
 
 ![](Recursos/ServidorRedisTweets.png)
+
+Tiempos: 
+PS: 4:17
+Ignite: 3:29
+Redis: 2:10
